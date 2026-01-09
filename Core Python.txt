@@ -1,0 +1,632 @@
+			Core python
+
+04/01/2026
+---------------------------------------------------------------------------------------------------------------
+Python :- High level	
+	Gudo van Russon - Netherland
+	Team...
+	Compiled and Interpreted
+	version 1.0 = 1990 - 1993
+	monty python flying circus
+	PVC channel var
+	3 versions are released 
+	support of 2 is closed 
+	set of protocols not programming language...
+	C-python implementation we are learning
+	C programming madhe protocols implement kelele ahet...
+	python is VM based 
+	PVM : python virtual machine
+	Any IDE
+	Python is General purpose language: python for scripting, data science, web development, gen AI
+	After compile - binary / bytecode = bytecode
+	.pyc
+	python demo.py
+	python -m compileall demo.py :  .pyc file tayyar hote : .pyc file = __pycache__ hya folder madhe store hote  
+	python is not a block structured : block structured () : 
+	python is indentation specific language
+	no delimiter 
+	print("Jay Ganesh")
+	case sensitive : capital / small = treated = different
+	python is dynamically typed programming language
+	there is no such concepts of data type in python 
+
+	iNo = 11	#integer
+	fNo = 3.15	#float
+	bNo = False	#boolean
+	cNo = 1+3i 	#complex
+
+	Sequence datatype 
+	List []
+	Set{}
+	Tuple ()
+	Dictionary{"key":value, }
+
+	print()
+	Entry point function 
+	if __name__ = "__main()__":
+		main()
+
+--------------------------------------------------------------------------------------------------------------
+
+05/01/2026
+
+
+Reserved Keywords: 
+
+False 	await 		else 	import 		pass 
+None	break		except	in		raise
+True	class		finally	is		return
+and	continue	for	lambda		try
+as	def		from	nonlocal	while
+assert	del		global	not		with
+async	elif		if	or		yield	
+
+Datatypes in python:
+
+1) None
+2) Numeric 	-> int, float, bool, complex
+3) Sequence 	-> List[], Tuple(), Set{}, String""'', Range
+4) Dictionary	-> {"key": values}
+
+5) No character concept in python
+
+
+Operators in python:
+
+1) Arithmetic Operators
+2) Relational Operators / Comparison Operators
+3) Logical Operators
+4) Assignment Operators
+5) Bitwise Operators
+6) Membership Operators
+7) Identity Operators
+
+
+4) Assignment Operators: 
+
+=	y=a+b
++=	m = m+ 10
+-=	m = m-10
+*=	m = m*10
+//=	m = m//10
+%=	m = m%10
+**=	m = m**10
+
+5) Bitwise Operators
+
+&	Bitwise AND (T T = T)
+|	Bitwise OR  (F F = F)
+^	Bitwise OR/Bitwise XOR 	(T F = T), (F T = T)
+~	Bitwise inversion(one's complement) (NOT operator) (~F = T) (~T = F)
+<<	shifts the bits to left / Bitwise Left Shift
+>>	shifts the bits to right / Bitwise Right shift
+
+
+6) Membership operators 
+
+in 
+not in
+
+7) Identity Operators
+
+is
+is not 
+
+
+
+Operator Precedence and Associativity: 
+
+computer can scan from left to right and perform operation.
+execution order
+
+(1+1)*2**4//3+4-1
+2*2**4//3+4-1
+2*16//3+4-1
+32//3+4-1
+10+4-1
+14-1
+13
+
+
+TypeConversion: 
+	Implicit Type Conversion
+	Explicit Type conversion : 
+		int(n), float(n), complex(n), complex(a,b) a = real part, b = imaginary part, str(n), list(n), tuple(n), bin(n), oct(n), hex(n)
+
+
+ESCAPE SEQUENCE:
+	\a bell
+	\b backspace
+	\f formfeed
+	\n NewLine
+	\r Carriage Return
+	\t Horizontal Tab
+	\v Vertical Tab
+	\n newline backslash and NewLine Ignored
+	\\ backslash
+	\' single quote
+	\" double quote
+
+
+Loops : for,while
+Array : one dimensional, multidimensional
+		
+--------------------------------------------------6/01/2026-----------------------
+
+
+NumPy:
+
+	ways of creating 1 D array:
+
+	1) array() Function
+	2) linspace() function
+	3) logspace() function
+	4) arrange() function
+	5) zeros() function
+	6) ones() function
+
+1) import numpy as np
+   roll = np.array([11,21,51,101])
+
+2) import numpy as np
+   roll = np.linspace(start,end,num=50,endpoint=True)
+
+3) import numpy as np
+   roll = np.logspace(start,end,num=50,endpoint=True,base = 10.0, dtype = None, axis = 0)
+
+4) import numpy as np
+   roll = np.arange(start,stop,stepsize,dtype=None)
+
+5) import numpy as np
+   roll = np.zeros(shape,dtype=float, order='C')
+
+
+any(): np.any(iResult)
+all(): np.all(iResult) 
+where(): np.where(iArr>iBrr, iArr, iBrr)
+nonzero() :- nonzero element chi index det
+
+Aliasing Array: give nickname to array
+a = np.array([11,21,51,101])
+b = a
+
+view(), copy()
+
+view()= same data different memory location
+copy()= same data different memory location
+
+
+2D Array using Array()
+
+import numpy as np
+
+iArr = np.array([[],[]],dtype = int,float,str)
+
+
+
+
+
+-----------------------------------------------------------
+
+
+			STRING
+
+
+String basic: 
+	Group of characters
+
+	"",'',''' Multiline '''
+
+Double Quote inside single quotes
+
+str = 'Hello "i am Tejas" How are you'
+
+
+sSubject = "PYTHON"
+print(id(sSubject))
+			Same memory location for both
+ssSubject = "PYTHON"
+print(id(ssSubject))
+
+
+MUTABLE AND IMMUTABLE OBJECT
+
+MUTABLE: values / content = change  
+	List, Set, Dictionaries
+
+IMMUTABLE : value / content = not change
+	Numbers, String, Tuple
+
+
+Repetition Operator: 
+
+		denoted = *
+
+"$" * 7
+
+
+Concatenation Operator: 
+
+Str1 = "Tejas"
+Str2 = "Pandure"
+
+Str3 = str1 + str2
+print(Str3)
+
+Comparing String
+
+all the comparison opeartors
+
+
+
+
+Fomatting String
+
+C-style string Formatting : print("My name is %s and my age is %d %("TEjAS', 55))
+formate() : print("formate placeholder" %{'key':value})
+fString/formatted String literals: 
+	Format placeholder = %(mapping_key)[flags][width][preciison] type %
+
+
+format() method : formatting string 
+	str.formate(arg)
+	
+
+Accessing Arguments items
+
+value(10,20)
+print("{0[0]} {0[1]}".format(value))
+
+
+f-String/formatted String Literal 
+
+upper() : string.upper()
+lower() : string.lower()
+swapcase() : string.swapcase()
+title() : string.title() - per word letter = capital >>>
+
+isupper() : string.isupper() return True -> all in upper
+islower() : string.islower() return True -> all in lower
+istitle() : string.iscapital() return True -> first letter in capital
+
+
+isdigit(): string madhe sagle digit
+isalpha(): string madhe only alphabet
+isalnum(): string madhe alphabet + digit
+
+isspace(): string madhe space 
+
+lstrip(): remove space of leftside
+rstrip(): remove space of rightside
+strip(): remove space from both side
+
+replace(): exchange 	string.replace(old,new)
+split(): divide		string.split('sperator')
+join(): combine		"separator".join(string_list)
+
+startswith(): 		string.startswith('specified_string')
+endswith():		string.endswith('specified_string')		
+
+Functions: 
+
+Built-in functions : upper() lower() print() input()
+userdefined functions : 
+	
+def Addition():
+	return(variable or expression)
+
+def Addition(int iNo1, int iNo2):
+	return(variable or expression)
+
+
+pass a function as a parameter: 
+	we can pass a function as parameter to another function.
+
+function return another function:
+	
+Actual and formal argument:
+	formal argument:
+		Function definition parameters are called as formal arguments
+	Actual argument:
+		Function call arguments are actual argumets
+		1) Positional Arguments : 
+			arguments are passed in correct positional order
+			no of formal arguments = no of actual arguments
+		2) Keyword Arguments
+		3) default Arguments
+		4) Variable length arguments : denoted by * 
+			def add(*num):
+		5) keyword variable length argumets:
+			accept the argument in key-value pair
+			denoted by ** 
+
+
+lambda function
+
+---------------------------------------------------------------------------07-1-2026----------------------
+
+
+Immediately Invoked Function expression(IIFE)
+
+(lambda x , y : print(x+y)) (3+3)
+
+Local variable: scope inside that function
+	def add (y):
+		x = 10 
+		print(x) x is a local variable
+
+
+global variable: 
+
+globals() function
+
+recursion : calling function inside function
+
+
+numpy built in math functions: 
+
+sum(arr) : sum of all elements
+prod(arr) : product of all elements
+sqrt(arr) : square root
+
+
+Math module: used to perform mathematical operation
+
+floor(n): decrease n value to the previous integer value. 
+ceil(n): raise n value to the next higher integer
+fabs(n): returns absolute value of positive quantity of n
+factorial(n): returns factorial value of n
+pow(n) 
+sin(n)
+cos(n)
+tan(n)
+gcd(n,m)
+
+
+List : store different types of elements.
+	[]
+	a = [10,20,-50,334.3,'tejas']
+	mutable
+
+append() : this is used to add element at the end of existing list
+	llist.append(45)
+
+insert(): insert an element in a particular position
+
+list_name.insert(position_number,new_element)
+
+pop() : remove last element from existing list
+
+remove() : remove first occurance of element
+
+index(): return position number
+
+reverse(): reverse the order of the list
+
+extend(): adding list into another list
+
+count(): no of occurrence of element in the list
+
+sort(): sort the list into ascending order
+
+clear(): delete all the elements from the list
+
+slicing on list: 
+
+new_list_name = list_name[start:stop:stepsize]
+
+concatenation of list: +
+
+repetition of list: * operator is used to repeat the elements of list
+
+aliasing list : give nick name to list
+
+copy() : 
+
+cloning list
+
+passing list into the function 
+
+list() : create list, returns mutable list of elements
+	list(range(start,stop,stepsize))
+
+
+filter: list(filter(function_name, iterable))
+map : list(map(function_name, iterable))
+reduce : reduce(function_name, iterable))
+
+
+generator:
+	generators are functions that return a sequence of values. we use yield statement to return the value from function.
+
+yield statement: 
+	return the elements from a generator function into a generator object
+	yield a
+	
+next() function is used to retrieve element by element from generator object.
+	next(gen_obj)
+
+Tuple : datatype
+	heterogeneous data
+	ordered
+	indexed
+	immutable
+	allows duplicate
+
+repetation of tuple :  result = iArr * 5 
+Alising tuples
+copying tuples a = () ; b = a
+nested tuple (())
+list of tuples : a = [10,20,(30,40)]
+
+tuple of list: a = (10,20,[30,40])
+we cannot modify tuple() but we can modify list[]
+
+set type : is an unordered collection of elements much like a set in mathematics
+does not accept duplicate elements
+set mutable
+unordered : we cann't access it by using index
+
+creating empty set a = set()
+add element = add()
+delete element = remove() , discard()
+clear() a.clear()
+intersection, union, issubset, issuperset
+
+passing set to function as an argument
+
+
+Dictionary:
+	{}
+	stores data into key value pair formate
+	unordered
+	mutable : we can modify, without changing their identity
+
+stu = {101:'rahul',}
+key unique
+we mention same key again, the old key be overwritten
+key : immutable type : integer, string or tuple
+we can't use list or dictionary as a key 
+
+access : 
+
+fees = {
+    'rahul': 2300,
+    'raj' : 34454,
+    'sonam':5656
+}
+
+print(fees['rahul'])
+
+modifying dictionary : modifying existing value of key = new value of key
+delete = del fees['key']
+add = fees['key'] = value
+test present or not : in, not in
+
+clear() : remove elements fees.clear()
+copy() :  feesX = fees.copy()
+formkeys(key,value) : make new dictionary
+get(): return value of the key
+
+
+
+---------------------------------------------------8 /1/2026--------------------------------------------------
+
+| Feature           | **List**                  | **Tuple**            | **Set**               | **Dictionary**            |
+| ----------------- | ------------------------- | -------------------- | --------------------- | ------------------------- |
+| Syntax            | `[ ]`                     | `( )`                | `{ }`                 | `{key:value}`             |
+| Type              | Sequence                  | Sequence             | Unordered Collection  | Mapping                   |
+| Mutability        | **Mutable**               | **Immutable**        | **Mutable**           | **Mutable**               |
+| Ordered           | **Yes**                   | **Yes**              | **No**                | **Yes** (3.7+)            |
+| Indexed           | **Yes**                   | **Yes**              | **No**                | **By Key**                |
+| Allows Duplicates | **Yes**                   | **Yes**              | **No**                | **Keys: No**, Values: Yes |
+| Data Type Stored  | Values                    | Values               | Unique Values         | Key + Value               |
+| Access Method     | Indexing                  | Indexing             | Membership Test       | Key Lookup                |
+| Keys              | Not applicable            | Not applicable       | Not applicable        | **Unique & Immutable**    |
+| Values            | Elements                  | Elements             | Elements              | Values mapped to keys     |
+| Use Case          | Ordered & modifiable data | Fixed read-only data | Unique items, set ops | Structured data storage   |
+| Performance       | Slower than tuple         | Fastest in lookup    | Fast membership tests | Fast key lookup           |
+| Memory Usage      | Higher than tuple         | Lower than list      | Medium                | Higher                    |
+| Methods Support   | Many                      | Few                  | Set ops               | Many (keys, values)       |
+| Example           | `[10, 20, 30]`            | `(10, 20, 30)`       | `{10, 20, 30}`        | `{'a':10, 'b':20}`        |
+
+
+--------------------------------------------------------------------------------------------------------------
+
+keys()
+dKeys = dNames.keys()
+print("Keys are : ",dKeys)
+
+values()
+dvalues = dNames.values()
+print("values are: ",dvalues)
+
+update() : add elements into dictionary
+dNames.update({104:'Tejas'})
+
+vals = {201: "rahul",
+         202: "sham",
+         203: "ram",}
+dNames.update(vals)
+
+pop()
+dNames.pop(key)
+
+
+popitem() : remove last element from the dictionary
+pairs are LIFO last in first out
+dNames.popitem()
+
+setdefault()
+: returns the specified value of key
+if key is not found then it inserts key with the specified value..
+dNames.setdefault(key,value)
+
+nested dictionary: 
+
+nDict = {'dict1':{},'dict2':{}}
+
+
+
+List comprehension:
+	new_list = [expression for item in iterable_object if_statement]
+	there can be zero or more If statements
+	there can be one or multiple for loops
+
+	lst1 = [i+1 for i in rage(20)]
+	lst2 = [ i for i in range(20) if i%2==0]
+	list3 = [i for i in range(20) if i%2==0 if i%3 == 0]
+
+
+
+list comprehension with if else statement: 
+	new_list = [expression if_statement else expression for item in iterable_objec]
+	list1 = [iCnt if iCnt % 2 == 0 else "invalid" for iCnt in range(10)]
+
+nested list comprehension: 
+	list1 = [ [i*j for j in range(4,7) ] for i in range(6,8)]
+
+
+Set comprehension:
+	set = { i + 1 for i in range(89)}
+	set1 = {iCnt for iCnt in range(45) if iCnt % 2 ==0}
+
+dictionary comprehension
+
+	dict1 = { iCnt : iCnt * 2 for iCnt in range(90)}
+
+converting tuple and list into dictionary
+
+list = [(101,"Rahul"),(102,"Raj")]
+
+dict1 = {k:v for k,v in list}
+print(dict1)
+
+
+--------------------------------------------------------
+
+1) array : need to store group of elements of same datatype 
+2) List : list is beneficial if you need to store group of elements of same or different datatype
+	Mutable so we can modify
+	used more memory than array
+3) tuple : store group of elements of same or different datatype
+	tuples are immutable so we can not modify it's element
+4) Set: store unordered group of elements of same or different datatypes
+	does not allow duplicate elements
+	mutable : we can modify
+	unordered we cannot access its elements using index
+5)dictionary: store elements in key-value pair , same or different datatype.
+	unordered collection
+	mutable we can modify
+
+
+id() gives identity of an object
+type() return type of object
+getsizeof() returns size of an object in bytes, object can be any type
+
+min() : returns smallest of two or more arguments
+max() : returns largest of two or more arguments
+sorted() : sort the elemtns from ascending
+
+in 
+not in

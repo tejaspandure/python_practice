@@ -1,0 +1,242 @@
+		Advance Python
+core python all topics
+
+
+Object Oriented Programming
+1)Encapsulation :-binding characteristics and behaviors 
+2)abstraction :- hiding something from outside world
+3)inheritance :- reusability
+4)polymorphisms :- syntactic sugar : single name multiple baharious
+
+
+
+Class : 
+	group of attributes and methods.
+		int a = 10	function ()
+	create class : 
+		class Program1(pobj):
+			def __init__(self):
+				self.variable_name = value 	-
+				self.variable_name = value1	- = constructor
+				self.variable_name = 'value'	-
+			def Addition(self):
+				body of method
+
+class = use to create class
+object : optional , derived from one object class as inheritance
+__init__() : 
+
+
+
+
+
+
+class Number:
+    iNo1= 0 #class variables
+    iNo2= 0
+
+    @classmethod
+    def showClassValues(cls):
+        print("@ClassMethod annotation gets called")
+        print("Class variable: ")
+        print("iNo1: ",cls.iNo1)
+        print("iNo2: ",cls.iNo2)
+        print()
+
+    def __init__(self,iX,iY):
+        print("Constructor called")
+        self.iNo1 = iX  #instance variable
+        self.iNo2= iY
+        print()
+    
+    def Addition(self):
+        print("Addition function called")
+        print()
+        return self.iNo1 + self.iNo2
+    
+    
+    def Substraction(self):
+        print("Substraction function called")
+        print()
+        return self.iNo1 - self.iNo2
+    
+    def Multiplication(self):
+        print("Multiplication function called")
+        print()
+        return self.iNo1 * self.iNo2
+    
+    def Division(self):
+        print("Division function called")
+        print()
+        return self.iNo1 / self.iNo2
+    
+    @staticmethod
+    def Menu():
+        print("@staticmethod annotation gets called")
+        print("1: Addition")
+        print("2: Substraction")
+        print("3: Multiplication")
+        print("4: Division")
+
+
+def main():
+    iValue1 = int(input("Enter the value: "))
+    iValue2 = int(input("Enter the second value: "))
+    print()
+    nobj = Number(iValue1,iValue2)
+
+    nobj.Menu()
+
+    iChoice = int(input("Enter your choice: "))
+    print()
+
+    match iChoice:
+        case 1:
+            print("Addition of given number is: ", nobj.Addition())
+            print()
+
+        case 2:
+            print("Substraction of given number is: ",nobj.Substraction())
+            print()
+
+        case 3:
+            print("Multiplication of the given number is : ",nobj.Multiplication())
+            print()
+
+        case 4:
+            print("Division of given number is: ",nobj.Division())
+            print()
+    
+        case _:
+            print("Invalid choice")
+            print()
+
+    nobj.showClassValues()
+
+if __name__ == "__main__":
+    main()
+
+Concept	Example in Code
+Class	class Number:
+Object	nobj = Number(...)
+Constructor	__init__
+Instance Variable	self.iNo1
+Class Variable	iNo1 = 0
+Method	Addition() etc.
+Encapsulation	Class + methods
+Match Case	match iChoice:
+Structural Pattern Matching	P3.10 feature
+Return Value	return self.iNo1 + self.iNo2
+Method Invocation	nobj.Addition()
+User Input	input()
+@Staicmethod : dont depend on any other 
+@class method : print class variable values
+
+Namespace : represents a memory block where names are mapped to objects
+class namespace - A class maintains it's own namespace known as class namespace. In the class namespace, the names are mapped to class variables
+
+
+---------------------------------------------9-1-2026--------------------------------------
+
+
+Inheritance :
+	reusability
+
+4 types :
+	single
+	multilevel
+	hierarchical
+	Multiple 
+
+super() keyword is used to access the constructor elements of the class into another function's constructor
+
+
+polymorphism : 
+	poly : many 
+	morphos : forms
+	
+	a variable, object or method perform different behavior according to situation, it is called polymorphism
+	
+	Duck typing
+	operator overloading
+	method overloading
+	method overriding
+
+	Duck Typing: 
+		if an object bhaves like something, python treats it as that thing- regardless of its actual type.
+		if it walk line a duck and quacks like a duck, it's a duck 🦆
+
+Strong type:
+	hasattr() : check whether the object has a method or not.
+	hasattr(object,attribute)
+	found = true 
+	not found false
+
+
+
+Method Overloading
+	Same class : 
+		more than one method with same name
+
+Method overriding:
+	function = same paramters same operation different
+
+operator overloading: 
+	any operator performs additional actions other than what it is meant for, it is called operator overloading
+	
+MODULE: 
+	module is a file containing python definitions and statements
+	group of variables, methods, functions and clases ect.
+	executed only the first time, the module name is encountered in an import statement
+	file name is the module name with suffix .py appended
+
+Types: 
+	User-defined moudles
+	built-in modules
+		ex: array, math, numpy, sys
+
+				from cal import add, sub
+				from cal import add as a
+				import cal as cp
+				from cal import *
+	
+cal.py				main.py
+ 
+def add(a,b):			from cal import add,sub
+    return a+b			iResult = add(3,4)
+				print(iResult)
+def sub(a,b):			
+    return a-b			iResult = sub(6-3)
+				print(iResult)
+
+
+Package:
+	package is nothing but a directory/folder which must contain a special file called __init__.py.
+	__init__.py file can be empty, it indicates that the directory it contains is a python package, so it can be imported the same way a module can be imported
+Package use
+	import packageName.moduleName
+	import packageName.subPackageName.moduleName
+
+	import Admin.service
+	import Admin.common.footer
+	import User.logout
+
+	from Admin import service
+	from Admin.Common import footer
+	from Admin*
+
+Access Variable,Function,Method,Class etc.?
+	packageName.moduleName.functionName()
+	
+	service.admin_service()
+	footer.admin_common_footer()
+
+from packagename.moduleName import fun_name
+from packageName.subPackageName.moduleName import fun_name
+
+
+__all__:
+	if a package's __init__.py code defines a list named __all__, it is taken to be the list of module names that should be imported when from package import * is encountered.
+
+__all__ = ['dashboard','service','product']
+
